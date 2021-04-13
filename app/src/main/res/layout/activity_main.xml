@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingBottom="20dp"
+    android:paddingTop="50dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="25sp"/>
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tvName"/>
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Quantity:"
+        android:textSize="25sp"
+        android:layout_below="@+id/tvName"/>
+
+    <EditText
+        android:id="@+id/edQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tvName"
+        android:layout_toRightOf="@+id/tvQuantity"/>
+
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:text="ADD"
+        android:textSize="20dp"
+        android:layout_below="@+id/tvQuantity"
+        android:layout_alignLeft="@id/edQuantity"/>
+
+    <Button
+        android:id="@+id/btView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="10dp"
+        android:text="VIEW"
+        android:textSize="20dp"
+        android:layout_below="@+id/btAdd"
+        android:layout_alignLeft="@id/edQuantity"/>
+
+</RelativeLayout>
